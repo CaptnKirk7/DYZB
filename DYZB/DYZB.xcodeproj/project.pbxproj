@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		E19541A422A65F980021627F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19541A322A65F980021627F /* AppDelegate.swift */; };
-		E19541A622A65F980021627F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19541A522A65F980021627F /* ViewController.swift */; };
 		E19541A922A65F980021627F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19541A722A65F980021627F /* Main.storyboard */; };
 		E19541AB22A65F990021627F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E19541AA22A65F990021627F /* Assets.xcassets */; };
 		E19541AE22A65F990021627F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19541AC22A65F990021627F /* LaunchScreen.storyboard */; };
+		E19541BB22A66AAA0021627F /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = E19541BA22A66AAA0021627F /* Classes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E19541A022A65F980021627F /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19541A322A65F980021627F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E19541A522A65F980021627F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E19541A822A65F980021627F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E19541AA22A65F990021627F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E19541AD22A65F990021627F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E19541AF22A65F990021627F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E19541BA22A66AAA0021627F /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Classes; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +54,8 @@
 		E19541A222A65F980021627F /* DYZB */ = {
 			isa = PBXGroup;
 			children = (
+				E19541BA22A66AAA0021627F /* Classes */,
 				E19541A322A65F980021627F /* AppDelegate.swift */,
-				E19541A522A65F980021627F /* ViewController.swift */,
 				E19541A722A65F980021627F /* Main.storyboard */,
 				E19541AA22A65F990021627F /* Assets.xcassets */,
 				E19541AC22A65F990021627F /* LaunchScreen.storyboard */,
@@ -123,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E19541AE22A65F990021627F /* LaunchScreen.storyboard in Resources */,
+				E19541BB22A66AAA0021627F /* Classes in Resources */,
 				E19541AB22A65F990021627F /* Assets.xcassets in Resources */,
 				E19541A922A65F980021627F /* Main.storyboard in Resources */,
 			);
@@ -135,7 +136,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E19541A622A65F980021627F /* ViewController.swift in Sources */,
 				E19541A422A65F980021627F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,8 +282,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DYZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,7 +293,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = redcyan.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -299,8 +301,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DYZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = redcyan.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
